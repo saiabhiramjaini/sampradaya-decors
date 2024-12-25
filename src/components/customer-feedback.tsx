@@ -36,13 +36,13 @@ export default function CustomerFeedback() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <motion.h2 
+          <motion.h2
             variants={fadeInUp}
             className="text-3xl md:text-4xl font-script text-gray-800 mb-4"
           >
             What Our Customers Say
           </motion.h2>
-          <motion.p 
+          <motion.p
             variants={fadeInUp}
             className="text-gray-600 max-w-2xl mx-auto"
           >
@@ -57,7 +57,7 @@ export default function CustomerFeedback() {
           viewport={{ once: true }}
           className="grid md:grid-cols-3 gap-8"
         >
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial) => (
             <motion.div
               key={testimonial.name}
               variants={fadeInUp}
@@ -78,4 +78,3 @@ export default function CustomerFeedback() {
     </section>
   )
 }
-

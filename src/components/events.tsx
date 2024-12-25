@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { fadeInUp, staggerContainer, scaleIn } from '@/lib/animations'
-import { Heart, PartyPopperIcon as Party, Baby, Cake, Users, Music } from 'lucide-react'
+import { Heart, Users, Baby, Cake, PartyPopper as Party, Music } from 'lucide-react'
 
 const events = [
   {
@@ -48,13 +48,13 @@ export default function Events() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <motion.h2 
+          <motion.h2
             variants={fadeInUp}
             className="text-3xl md:text-4xl font-script text-gray-800 mb-4"
           >
             Events We Cover
           </motion.h2>
-          <motion.p 
+          <motion.p
             variants={fadeInUp}
             className="text-gray-600 max-w-2xl mx-auto"
           >
@@ -69,7 +69,7 @@ export default function Events() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {events.map((event, index) => (
+          {events.map((event) => (
             <motion.div
               key={event.title}
               variants={scaleIn}
@@ -91,4 +91,3 @@ export default function Events() {
     </section>
   )
 }
-
