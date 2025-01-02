@@ -3,8 +3,7 @@
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 import Image from "next/image";
-import logo from "../../public/logo.png"
-
+import logo from "../../public/logo.png";
 
 export default function HeroSection() {
   return (
@@ -49,33 +48,33 @@ export default function HeroSection() {
               transition={{ delay: 1.1 }}
               className="text-lg md:text-xl text-gray-600 mb-8"
             >
-              We bring smiles to your lips and beautiful memories to your heart on your special day
+              We bring smiles to your lips and beautiful memories to your heart
+              on your special day
             </motion.p>
             <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 1.3 }}
-  className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
->
-  <motion.a
-    href="https://wa.me/918125145821"
-    target="_blank"
-    rel="noopener noreferrer"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="bg-rose-500 text-white px-8 py-3 rounded-full hover:bg-rose-600 transition-colors shadow-lg hover:shadow-xl text-center"
-  >
-    Book Consultation
-  </motion.a>
-  <motion.button
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="bg-white text-rose-500 px-8 py-3 rounded-full hover:bg-rose-50 transition-colors shadow-lg hover:shadow-xl"
-  >
-    View Gallery
-  </motion.button>
-</motion.div>
-
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.3 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+            >
+              <motion.a
+                href="https://wa.me/918125145821"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-rose-500 text-white px-8 py-3 rounded-full hover:bg-rose-600 transition-colors shadow-lg hover:shadow-xl text-center"
+              >
+                Book Consultation
+              </motion.a>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-white text-rose-500 px-8 py-3 rounded-full hover:bg-rose-50 transition-colors shadow-lg hover:shadow-xl"
+              >
+                View Gallery
+              </motion.button>
+            </motion.div>
           </motion.div>
           <motion.div
             variants={fadeInUp}
@@ -100,13 +99,12 @@ export default function HeroSection() {
               transition={{ delay: 1 }}
               className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-xl"
             >
-              <div className="text-rose-500 font-semibold">500+</div>
+              <div className="text-rose-500 font-semibold">50+</div>
               <div className="text-sm text-gray-600">Events Decorated</div>
             </motion.div>
           </motion.div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

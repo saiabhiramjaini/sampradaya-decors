@@ -32,13 +32,13 @@ export default function ContactUs() {
                   <p className="text-gray-600">+91 81251 45821</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-4">
+              {/* <div className="flex items-center space-x-4">
                 <Mail className="w-6 h-6 text-rose-500" />
                 <div>
                   <h3 className="font-semibold text-gray-800">Email</h3>
                   <p className="text-gray-600">contact@sampradayadecors.com</p>
                 </div>
-              </div>
+              </div> */}
               <div className="flex items-center space-x-4">
                 <Instagram className="w-6 h-6 text-rose-500" />
                 <div>

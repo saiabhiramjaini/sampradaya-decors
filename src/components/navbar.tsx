@@ -26,7 +26,7 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {['Home', 'Events', 'Gallery', 'Testimonials', 'Contact'].map((item, index) => (
+            {[ 'Events', 'Testimonials', 'Contact'].map((item, index) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -57,7 +57,7 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden py-4"
           >
-            {['Home', 'Events', 'Gallery', 'Testimonials', 'Contact'].map((item) => (
+            {['Events', 'Testimonials', 'Contact'].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
